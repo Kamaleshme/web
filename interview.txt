@@ -1,0 +1,145 @@
+This kamalesh My toatal of exp and Relevent exp
+I got chance to work on different big data stack .like(Hadoop,HDFS,hive,spark,sqoop,AWS).Recently i started migrating project AWS.
+In my previous role, I was a part of the data ingestion team, where our primary data source was RDBMS. We utilized Sqoop to transfer the data from RDBMS to HDFS in the Avro format.Subsequently, we processed the data using Hive and stored it in HDFS as Avro.
+Hive was our primary tool for processing the data. We performed transformations, aggregations, and other operations using Hive queries.
+We chose Avro for its schema evolution capabilities, allowing us to accommodate changes in data structure over time.
+Our team handled multiple RDBMS tables, executing various Sqoop jobs and processing the data using Hive.
+Data Application:
+In my subsequent role on the Data Application team, I focused on utilizing Spark for various data processing tasks.
+We dealt with complex JSON data received from web APIs, which had different data models.
+We designed and executed seven distinct Spark jobs to address different use cases and requirements.
+Some of the tasks included customer data cleansing, prediction model generation with currency conversion, and joining with Avro data generated during the data ingestion phase.The output data from these Spark jobs was written to different directories in HDFS, based on specific requirements.
+Additionally, we worked with nested data structures, generating complex nested data using Spark.
+Finally, to perform analytics on the processed data, we utilized Impala.Impala allowed us to query and analyze the data efficiently, enabling us to derive valuable insights for our business.Overall, my experience encompasses a wide range of big data technologies, with a focus on data ingestion, processing, complex data models, Spark jobs, and business analytics using Impala.
+---------------------------------
+recently from past month, I'm using AWS cloud.So the current assignment which I have been involved, we have two sources and three destinations.The two sources are S3 for us where we have, we call it as a landing zone and we have another source as Snowflake and we do have the kind of Spark jobs running over EMR and we consume the data from S3 and read from Snowflake as well as we have close to, we've done a step execution in EMR.
+ We do kind of 14 cross 14 step execution. Out of this 14, one of the Spark jobs writes the data to Snowflake, other Spark jobs writes the data to S3 and the same data which writes to S3 writes the data to Elasticsearch mounted on AWS.So the source are completely S3 and Snowflake, Spark jobs are used for transformation layer in EMR and the definitions are S3, Snowflakes and Elasticsearch.
+--------------------------------------------------------------------------------------------------
+This kamalesh My toatal of exp and Relevent exp
+I got chance to work on different big data stack .like(Hadoop,HDFS,hive,spark,sqoop,AWS).Recently i started migrating project AWS.
+ Thanks for your time.
+ "In my previous role,We can use Apache Spark Streaming to implement this real-time data processing application. I worked on a Kafka streaming project to process real-time clickstream data from our website. The goal of the project was to provide real-time insights into user behavior and website performance.
+
+"To achieve this, we used Kafka Streams to develop a stream processing application that read the clickstream data from Kafka, transformed it into a format that could be easily analyzed, and then wrote the transformed data to a database.
+
+
+ we  use Kafka Connect Produce data to a Kafka topic .
+Producer This is the program that publishes data to topics Kafka Connect  read data from a variety of sources APIs.
+Producers create new messages. In other publish/subscribe systems, these may be called publishers or writers.
+-
+
+consumer subscribes to one or more topics and reads the messages in the order in which they were produced. 
+
+ as well as
+Consume data from the Kafka topic Kafka Streams applications can read data from Kafka topics.
+
+Once the data has been consumed from Kafka, and
+Process the data using the Kafka Streams application.
+n.
+
+Write the processed data to a database using a Kafka Connect connector.
+------------------------------------------------------------------
+
+Offset: This is an identifier for each message.
+The consumer keeps track of which messages it has already consumed by keeping track of the offset of messages. The offset is another bit of metadata—an integer value that continually increases—that Kafka adds to each message as it is produced. Each message in a given partition has a unique offset. By storing the offset of the last consumed message for each partition, 
+
+Messages in Kafka are categorized into topics.
+ This is a queue  a broker can run several topics
+This is a cluster coordinator
+it can be processed 
+
+Produce data to a Kafka topic using a Kafka Connect connector.
+Consume data from the Kafka topic using a Kafka Streams applicatio
+
+
+Please let me know if there's anything else you would like to discuss or any specific aspects you'd like to explore further.
+
+
+
+ So we do have a kind of a schedule jobs, which are running
+ all together. These entered orchestration. So from the pulling up the data from the processing
+ of the data to lead loads of target table, this entire jobs run in the format of scheduled manner.
+ So that's how that works here as an orchestration as a data flow. And towards the course perspective,
+ we have been going ahead with the high details creation and high processing
+ or this aggregation to everything. Same applies for the Spark data frames as well. So then we have actually currently migrating from completely from Hive to Spark.
+
+involving the actual logistics of the project that they would be working on currently.
+
+ecause like one question here, Kevin, like I worked on completely on the streaming area, okay, like Kafka,
+ Kinesis, and also we trigger the jobs or the AWS Kinesis. We use Predominantly Spark DataFrames for processing the
+ data to write it to NoSQL DB.
+
+ I just want to know like whether they also follow the same kind of a technical stack
+ like streaming stack or batch stack. What kind of a technical stack do run running over to the organization
+ and kind of do anything else? So this is the part where I can only give you some speculative data. I don't have
+ hard and fast information on that aspect. I believe it's a multi-solution or multi-project piece. It's not a single
+
+ Thanks for your time.
+We can use Apache Spark Streaming to implement this real-time data processing application. "In my previous role, I worked on a Kafka streaming project to process real-time clickstream data from our website. The goal of the project was to provide real-time insights into user behavior and website performance.
+
+"To achieve this, we used Kafka Streams to develop a stream processing application that read the clickstream data from Kafka, transformed it into a format that could be easily analyzed, and then wrote the transformed data to a database.
+
+Develop a batch processing pipeline for analyzing supply chain data in a manufacturing industry. The project can involve extracting data from various sources such as inventory systems, sales records, and logistics databases. Apply batch processing techniques to transform and aggregate the data, perform demand forecasting, optimize inventory levels, and identify supply chain inefficiencies.
+
+scala window
+
+
+
+
+Fedex
+Big Truck
+Telstra
+Hewlett Packard
+
+What is data modeling, and why is it essential in the context of database design?
+Data modeling is the process of creating a conceptual representation of data and its relationships within an organization. It involves defining entities, attributes, and the relationships between them. Data modeling is essential in the context of database design because it provides a clear and structured blueprint for organizing and managing data. It helps in understanding the data requirements, improving data quality, optimizing database performance, and ensuring data consistency and integrity.
+
+Explain the main components of an Entity-Relationship Diagram (ERD) and how they represent the data structure.
+An Entity-Relationship Diagram (ERD) is a graphical representation of the data model. Its main components include:
+
+Entities: Represent real-world objects, such as customers, products, or employees.
+Attributes: Describe the properties of entities, such as name, age, or address.
+Relationships: Show the associations between entities, such as one-to-one, one-to-many, or many-to-many relationships.
+How do you differentiate between a logical data model and a physical data model? What are the purposes of each?
+A logical data model focuses on the business requirements and represents the data independent of any specific database management system. It uses high-level entities, attributes, and relationships to depict the data structure without concern for implementation details.
+A physical data model, on the other hand, is specific to a particular database management system and represents how the logical model will be implemented. It includes details like data types, indexes, primary keys, and foreign keys.
+
+How do you identify and define entities and attributes in a data model for a given business scenario?
+To identify entities and attributes, you analyze the business scenario and identify real-world objects and their properties. For example, in an e-commerce business, you may identify entities like "Customer" and "Product," with attributes such as "Name," "Email," "Price," etc.
+
+What are the cardinality and participation constraints in ERDs, and how do they help define relationships between entities?
+Cardinality specifies the number of instances of one entity that can be associated with the number of instances of another entity in a relationship. Participation constraints define whether an entity's participation in a relationship is mandatory (total participation) or optional (partial participation).
+
+How do you handle inheritance and specialization/generalization in data modeling?
+Inheritance and specialization/generalization are modeling techniques to represent hierarchical relationships between entities. Inheritance is used to derive entities from a base entity, inheriting its attributes and relationships. Specialization/generalization allows entities to be divided into subgroups based on their common characteristics.
+
+Describe the differences between a star schema and a snowflake schema in the context of data warehousing.
+Both star schema and snowflake schema are used in data warehousing
+
+Scala source code is intended to be compiled 
+to Java bytecode to run on a Java Virtual 
+Machine (JVM)
+● Java libraries may be used directly in Scala
+● Unlike Java, Scala has many features of 
+functional programming
+
+ Basic Actions
+○ First
+○ Collect
+○ Count
+○ Take
+
+Basic Transformations
+○ Filter
+○ Map
+○ FlatMap
+
+
+ Spark can use data stored in a variety of formats
+○ Cassandra
+○ AWS S3
+○ HDFS
+
+
+
+Stop generating

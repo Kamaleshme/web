@@ -1,0 +1,85 @@
+This kamalesh My toatal of exp and Relevent exp
+I got chance to work on different big data stack .like(Hadoop,HDFS,hive,spark,sqoop,AWS).Recently i started migrating project AWS.
+In my previous role, I was a part of the data ingestion team, where our primary data source was RDBMS. We utilized Sqoop to transfer the data from RDBMS to HDFS in the Avro format.Subsequently, we processed the data using Hive and stored it in HDFS as Avro.
+Hive was our primary tool for processing the data. We performed transformations, aggregations, and other operations using Hive queries.
+We chose Avro for its schema evolution capabilities, allowing us to accommodate changes in data structure over time.
+Our team handled multiple RDBMS tables, executing various Sqoop jobs and processing the data using Hive.
+Data Application:
+In my subsequent role on the Data Application team, I focused on utilizing Spark for various data processing tasks.
+We dealt with complex JSON data received from web APIs, which had different data models.
+We designed and executed seven distinct Spark jobs to address different use cases and requirements.
+Some of the tasks included customer data cleansing, prediction model generation with currency conversion, and joining with Avro data generated during the data ingestion phase.The output data from these Spark jobs was written to different directories in HDFS, based on specific requirements.
+Additionally, we worked with nested data structures, generating complex nested data using Spark.
+Finally, to perform analytics on the processed data, we utilized Impala.Impala allowed us to query and analyze the data efficiently, enabling us to derive valuable insights for our business.Overall, my experience encompasses a wide range of big data technologies, with a focus on data ingestion, processing, complex data models, Spark jobs, and business analytics using Impala.
+---------------------------------
+recently from past month, I'm using AWS cloud.So the current assignment which I have been involved, we have two sources and three destinations.The two sources are S3 for us where we have, we call it as a landing zone and we have another source as Snowflake and we do have the kind of Spark jobs running over EMR and we consume the data from S3 and read from Snowflake as well as we have close to, we've done a step execution in EMR.
+ We do kind of 14 cross 14 step execution. Out of this 14, one of the Spark jobs writes the data to Snowflake, other Spark jobs writes the data to S3 and the same data which writes to S3 writes the data to Elasticsearch mounted on AWS.So the source are completely S3 and Snowflake, Spark jobs are used for transformation layer in EMR and the definitions are S3, Snowflakes and Elasticsearch.
+--------------------------------------------------------------------------------------------------
+This kamalesh My toatal of exp and Relevent exp
+I got chance to work on different big data stack .like(Hadoop,HDFS,hive,spark,sqoop,AWS).Recently i started migrating project AWS.
+ Thanks for your time.
+ "In my previous role,We can use Apache Spark Streaming to implement this real-time data processing application. I worked on a Kafka streaming project to process real-time clickstream data from our website. The goal of the project was to provide real-time insights into user behavior and website performance.
+
+"To achieve this, we used Kafka Streams to develop a stream processing application that read the clickstream data from Kafka, transformed it into a format that could be easily analyzed, and then wrote the transformed data to a database.
+
+
+ we  use Kafka Connect Produce data to a Kafka topic .
+Producer This is the program that publishes data to topics Kafka Connect  read data from a variety of sources APIs.
+Producers create new messages. In other publish/subscribe systems, these may be called publishers or writers.
+-
+
+consumer subscribes to one or more topics and reads the messages in the order in which they were produced. 
+
+ as well as
+Consume data from the Kafka topic Kafka Streams applications can read data from Kafka topics.
+
+Once the data has been consumed from Kafka, and
+Process the data using the Kafka Streams application.
+n.
+
+Write the processed data to a database using a Kafka Connect connector.
+------------------------------------------------------------------
+
+Offset: This is an identifier for each message.
+The consumer keeps track of which messages it has already consumed by keeping track of the offset of messages. The offset is another bit of metadata—an integer value that continually increases—that Kafka adds to each message as it is produced. Each message in a given partition has a unique offset. By storing the offset of the last consumed message for each partition.
+
+----------------------------------------------------------
+DStreams from a collection of RDDs.
+Spark also provides  window operations, which is useful to apply transformations over a sliding window of data. All of the RDDs included in the window are merged, and the corresponding operations are carried out over it, as the window glides over a DStream. On a note, all these window operations are applied based on two important factors which are as follows:  (i) window length: which defines the duration of the window; (ii) sliding interval: the interval at which the window operation is performed
+------------------------------------------
+Spark Structured Streaming is a fault-tolerant, scalable stream processing engine built on 
+top of Spark SQL. Creating streaming DataFrames and streaming Dataset
+
+-------------------------
+we have presented a real-time distributed fraud scru-
+tinizing method for finacial transactions.The developed model is utilized
+in Spark streaming jobs that receive data from Kafka messaging system and process
+transactions. Transaction results will be stored in Cassandra database and if any
+fraud transaction comes will be displayed in the fraud alert dashboard. 
+-----------------------------------------------------
+
+
+ The Kafka cluster accumulates streams of records in categories called topics while every record has a key, a value, and a timestamp.   Kafka publishes and subscribe the records, which are in the form of streams and work as a messaging system of an enterprise. It is used in storing streams of records without any fault and helps in processing record streams.  Kafka runs  like  cluster,  which  is  compatible  for  more  than  one  host.  The  record consists  of  key,  timestamp and  a  value. Apache  Kafka  efficiently processes the real-time, streaming data when implemented along with Apache Storm, Apache  HBase  and  Apache Spark.  The  major terms  of  Kafka's architecture Apache Kafka and real-time data streaming                                                                                 
+are  topics,  records,  and  brokers.  Topics consist  of stream  of  records  while brokers are responsible for replicating the messages.      Figure 1.1 Apache Kafka Architecture  Kafka  is  deployed  as  a  cluster  on  multiple  servers,  so  Kafka  handles  it’s publish  and  subscribe  messaging  system  with  the  help  of  four  APIs  i.e., producer API, consumer API, streams API and connector API. Producer API: It allows application to publish streams of records. Consumer API: Processing of record streams takes place and the subscription of any number of topics of Kafka.  Streams  API:  Effectively  processing  of  input  streams  takes  place,  which ultimately produces output stream to any number of output topics. Connector API: Running and making use of consumers and producers, which can be reused again, which helps in connecting Kafka topics to the application or data systems, which is already available.  Kafka continuously receives requests for receiving and sending messages. The data is transferred through broker, which are coordinated and managed by Zookeeper.  Kafka  with  ZooKeeper  is  used  to  manage  service  discovery  for Kafka brokers of the Kafka cluster. The broker is nothing more than a Kafka server, which is a meaningful name to refer to it. The notion of broker leads directly to that of a cluster. Indeed, brokers run on a Kafka cluster, which is a group of machines, each executing one instance of Kafka broker. 
+
+
+Broker:  A  Kafka  server  running  on  a  cluster.  It  manages  the  messages received and send them to the consumer. Each topic is generally divided into a number of partitions (saved on peer-to-peer nodes, known as brokers). Cluster:  Kafka cluster typically consists of multiple brokers to maintain load balance. Kafka brokers are stateless, so they use ZooKeeper for maintaining their cluster state. Topics:  A topic (similar  to  a Table in  RDMBS,  but  here  each  record  is immutable) is a category or feed name to which records are published. Zookeeper: It has a distributed key-value store. It is highly optimized for reads but  writes  are  slower.  It  stores  metadata  and  handles  the  mechanics  of clustering  (distributing  updates/configurations,  etc).  Zookeeper itself  is allowing multiple clients to perform simultaneous reads, writes, and acts as a shared configuration service within the system
+-----------------------------------------------
+Create all table schemas in Cassandra and upload data to them from the file
+system using Spark SQL. 
+2.Start pre-processing training data and prepare a balanced dataset having equal no of fraud and non-fraud transactions.
+3. Train ensemble random forest model and take metrics like Fl score to decide how efficient this model to process fraud transactions better. pre-processing model and ensemble model saved to the filesystem
+4. Now both the used to process new incoming transactions from Kafka. 
+5. Start Spark streaming job which inputs both data pre-process and ensemble models and waiting for new transactions to process. 
+6. Kafka messaging system will start publishing new incoming transactions to the created topic.
+7. Spark streaming jobs will subscribe to the initiated topic and start consuming transactions.
+8. All new transaction processing results will be stored in Cassandra fraud and non- fraud transaction tables for future machine learning model training purposes and transaction monitoring.
+9. If any transaction is identified as fraud, then an alert will be receiving at fraud alerts monitoring dashboard to display the same.
+10
+. Once in a week or month, the machine learning model will be re-trained, if model efficiency is good than the previous deployed model then the new model will be deployed stopping the old model.
+
+ The  major terms  of  Kafka's architecture are  topics,  records,  and  brokers.  Topics consist  of stream  of  records  while brokers are responsible for replicating the messages. 
+-------------------------------
+
+
+
